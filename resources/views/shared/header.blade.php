@@ -1,8 +1,7 @@
 <header>
-    <h2>
+    <h1>
         Cocktails Header
-
-    </h2>
+    </h1>
 
 
 </header>

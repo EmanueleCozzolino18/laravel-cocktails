@@ -14,7 +14,7 @@ class CocktailsController extends Controller
     public function index()
     {
         $cocktails = Cocktail::all();
-        return view('cocktails.index', compact('comics'));
+        return view('cocktails.index', compact('cocktails'));
     }
 
     /**
