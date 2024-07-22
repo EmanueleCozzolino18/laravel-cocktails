@@ -140,7 +140,7 @@
 </html> --}}
 @extends('layouts.app')
 @section('main')
-    <h2>
+    <h1>
         Sono il Main dei cocktails
-    </h2>
+    </h1>
 @endsection
