@@ -143,4 +143,9 @@
     <h1>
         Sono il Main dei cocktails
     </h1>
+    <button>
+        <a href=" {{ route('coctails.index') }}
+        ">
+            Vai alla lista di Cocktails</a>
+    </button>
 @endsection
