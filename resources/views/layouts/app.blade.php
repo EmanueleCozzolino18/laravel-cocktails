@@ -11,6 +11,7 @@
 <body>
     @include('shared.header')
     @yield('main')
+    @include('shared.footer')
 
 </body>
 
