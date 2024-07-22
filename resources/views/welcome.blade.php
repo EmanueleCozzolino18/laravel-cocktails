@@ -138,4 +138,9 @@
         </div>
     </body>
 </html> --}}
-Ciao
+@extends('layouts.app')
+@section('main')
+    <h2>
+        Sono il Main dei cocktails
+    </h2>
+@endsection
