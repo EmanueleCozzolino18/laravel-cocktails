@@ -22,7 +22,7 @@ class CocktailsController extends Controller
      */
     public function create()
     {
-        //
+        return view('cocktails.create');
     }
 
     /**
@@ -30,7 +30,16 @@ class CocktailsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $newCockatil = new Cocktail();
+        $newCockatil->name = $data['name'];
+        $newCockatil->ingredients = $data['ingredients'];
+        $newCockatil->instructions = $data['instructions'];
+
+        $newCockatil->save();
+
+        return redirect()->route('cocktails.index');
     }
 
     /**
