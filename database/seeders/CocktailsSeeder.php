@@ -14,19 +14,21 @@ class CocktailsSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        $cocktail = new Cocktail();
 
-        for ($i=0; $i < 10 ; $i++) { 
-            
+        $cocktails = config('cocktails');
+
+        foreach ($cocktails as $cocktail) {
+
+            $coca = new Cocktail();
             // assegna valori specifici
     
-            $cocktail->name = $faker->sentence(1);
-            $cocktail->ingredients = $faker->sentence(6);
-            $cocktail->instructions = $faker->paragraph();
-    
-    
+            $coca->name = $cocktail['title'];
+            $coca->ingredients = $cocktail['ingredients'];
+            $coca->instructions = $cocktail['instructions'];
+
+
             //consolida el salvataggio del dato in tabella
-            $cocktail->save();
+            $coca->save();
         }
 
     }
