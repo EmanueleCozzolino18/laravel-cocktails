@@ -1,7 +1,6 @@
 <header>
     <h1>
         Cocktails Header
-
     </h1>
 
 

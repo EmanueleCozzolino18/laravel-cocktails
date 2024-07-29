@@ -30,6 +30,5 @@ class CocktailsSeeder extends Seeder
             //consolida el salvataggio del dato in tabella
             $coca->save();
         }
-
     }
 }

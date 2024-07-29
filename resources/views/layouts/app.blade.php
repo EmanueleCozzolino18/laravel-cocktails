@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cocktail List</title>
+    @vite('resources/js/app.js')
 </head>
 
-<body>
+<body class="container">
     @include('shared.header')
     @yield('main')
+    @include('shared.footer')
 
 </body>
 
