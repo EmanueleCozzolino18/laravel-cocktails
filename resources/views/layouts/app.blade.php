@@ -9,7 +9,7 @@
     @vite('resources/js/app.js')
 </head>
 
-<body class="container">
+<body>
     @include('shared.header')
     @yield('main')
     @include('shared.footer')
