@@ -1,15 +1,16 @@
 @extends('layouts.app')
 @section('main')
+{{-- dati di seeder: info di cocktail --}}
 <div class="container">
         <div class="row row-gap-4 my-5">
             @foreach ($cocktails as $cocktail)
             <div class="col-4">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card h-250">
+                    {{-- <img src="..." class="card-img-top" alt="..."> --}}
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><strong class="rosso">Nome Cocktail:</strong><em> {{ $cocktail->name }}</em></h5>
+                        <p class="card-text"><strong class="rosso">Ingredienti:</strong> {{ $cocktail->ingredients }}</p>
+                        <p class="card-text"><strong class="rosso">Instruzioni:</strong> {{ $cocktail->instructions }}</p>
                     </div>
                 </div>
             </div>
@@ -17,33 +18,7 @@
         </div>
     </div>
 </div>
-<ul>
-    @foreach ($cocktails as $cocktail)
-    <li class="cocktails-list">
-        <div>
-            Nome Cocktail:{{ $cocktail->name }}
-        </div>
-        <div>
-            Ingredienti: {{ $cocktail->ingredients }}
-        </div>
-        <div>
-            Istruzioni:
-            {{ $cocktail->instructions }}
-        </div>
 
-
-
-    </li>
-    @endforeach
-</ul>
-{{-- <ul>
-        @foreach ($cocktails as $cocktail)
-            <li>
-                Nome Cocktail:
-                {{ $cocktail->name }}
-</li>
-@endforeach
-</ul> --}}
 @endsection
 <style scoped>
     p {

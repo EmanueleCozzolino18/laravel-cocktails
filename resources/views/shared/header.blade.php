@@ -14,7 +14,7 @@
                         <em><a class="nav-link fs-3" href="#">Create</a></em>
                     </li>
                     <li class="nav-item px-3">
-                        <em><a class="nav-link fs-3" href="#">Features</a></em>
+                        <em><a class="nav-link fs-3" href="{{ route('cocktails.index') }}">Cocktails</a></em>
                     </li>
                 </ul>
             </div>
